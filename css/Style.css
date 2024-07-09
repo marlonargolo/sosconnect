@@ -21,7 +21,10 @@ font-weight: 500;
 a { text-decoration: none;
 
 }
-
+/* section {
+    height: 130vh;
+    background-color: #000;
+} */
 /* The sidebar menu */
 .lateral-menu {
     height: 100%;
@@ -288,7 +291,7 @@ main{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    margin: 10px 0 10px 5px;
+    /* margin: 10px 0 10px 5px; */
 }
 .service {
     background: rgba(255, 255, 255, 0.1);
@@ -614,7 +617,9 @@ footer {
         padding-top: 50px;
         margin-left: 0;
     }
-    
+    .you {
+        height: 155vh;
+    }
     .you-content {
         flex-direction: column;
         height: auto;
@@ -623,6 +628,7 @@ footer {
     .services-container, .video-container {
         width: 100%;
         padding: 10px;
+        m
     }
     .service h3 {
         font-size: 20px;
