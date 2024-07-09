@@ -188,7 +188,7 @@ main{
     height: auto;
 }.carousel-item img {
     width: 100%;
-    height: 90vh;
+    height: auto;
 }
 
 /* solutions */
