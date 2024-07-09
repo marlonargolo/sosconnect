@@ -21,6 +21,9 @@ font-weight: 500;
 a { text-decoration: none;
 
 }
+section{
+    height: 150vh;
+}
 
 /* The sidebar menu */
 .lateral-menu {
