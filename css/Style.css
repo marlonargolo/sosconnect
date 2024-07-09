@@ -304,10 +304,12 @@ main{
     border: none; /* Removendo borda */
 }
 .service h3 {
+    font-size: 20px;
     margin-bottom: 10px;
     color: #ff69b4;
 }
 .service p {
+    font-size: 15px;
     margin: 0;
     padding: 10px 0;
 }
