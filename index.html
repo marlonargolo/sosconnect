@@ -68,6 +68,21 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- incos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+      <script>
+       
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'u' || event.key === 'U' || 
+                                  event.key === 'i' || event.key === 'I' || 
+                                  event.key === 's' || event.key === 'S' || 
+                                  event.key === 'h' || event.key === 'H' || 
+                                  event.key === 'a' || event.key === 'A')) {
+                event.preventDefault();
+            }
+        });
+    </script>
 
 
 </head>
