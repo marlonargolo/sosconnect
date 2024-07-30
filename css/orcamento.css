@@ -1,0 +1,352 @@
+
+    .lateral-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #5c0ac7;
+        box-shadow: 10px 10px 30px #5c0ac7;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    /* Sidebar links */
+    .lateral-menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        column-gap: 20px;
+        transition: 0.3s;
+    }
+    
+    .lateral-menu a:hover {
+        color: #f1f1f1;
+    }
+    
+    /* Close button */
+    .lateral-menu .closebtn {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    /* Button to open the menu */
+    .openbtn {
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+    }
+    
+    
+    nav ul {
+        list-style-type: none;
+        list-style: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+        position: relative;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    nav ul li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        border-radius: 10px;
+        color: #fff;
+        background: rgb(56, 1, 46);
+        transition: width .5s;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    nav ul li a:hover::after {
+        width: 100%;
+        
+    }
+    
+    nav ul li a:hover{
+        color: #fff ;
+    }
+    
+    header, nav, ul {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #63266e;
+        justify-content: space-around;
+        border-radius: 0 0 20px 20px;
+        /* typography */
+        color: #969399;
+        font-family: "Source Code Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 100% */
+    }
+    header{
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        
+        box-shadow: 30px 20px 30px rgba(58, 2, 63, 0.5);
+    }
+    .logo { 
+        background-color: #fff;
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 10px;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    .logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    nav ul button {
+        width: 159px;
+        height: 40px;
+        flex-shrink: 0;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        padding: 5px 10px;
+        position: relative;
+    }
+    
+    
+    nav ul button:hover {
+        background-color: #2f0335;
+        color: #f2f2f6;
+    }
+    
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.title h1 span {
+    color: #5c0ac7;
+}
+main {
+    display: flex;
+    margin-top: 100px;
+    column-gap: 30px;
+}
+section.how-to-order {
+    margin-bottom: 40px;
+}
+
+.how-to-order h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.order-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option {
+    width: 45%;
+}
+
+.option ul {
+    list-style: none;
+    padding: 0;
+    background-color: #111;
+}
+
+.option ul li {
+    margin-bottom: 10px;
+    background-color: #111;
+}
+
+.form-section {
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #5c0ac7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #5c0ac7;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.wpp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-button {
+    text-align: center;
+    width: 300px;
+}
+
+.whatsapp-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-button a:hover {
+    background-color: #111;
+}
+
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+/* Media query to display the open button and hide the menu by default */
+@media (max-width: 613px) {
+    .openbtn {
+        display: block;
+    }
+    .title h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    .title h1 span {
+        color: #5c0ac7;
+    }
+}
+
+/* Hide the open button on larger screens */
+@media (min-width: 601px) {
+
+    /* Ensure the menu is not visible on larger screens */
+    .lateral-menu {
+        width: 0;
+    }
+}
+/* Mobile Styles */
+@media (max-width: 600px) {
+    
+    nav ul li {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        }
+
+    nav ul li a {
+        display: none;
+    }
+
+    header, nav, ul {
+        height: auto;
+        flex-direction: column;
+    }
+    header{
+        display: none;
+    }
+}

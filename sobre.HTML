@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect/code</title>
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav class="fixed-nav">
+            <div class="container">
+                <a href="index.html" class="logo">Connect/code</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Servico.html">Serviços</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="https://argolo.pythonanywhere.com/orcamento">Orçamento</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('img/connect-code.jpeg');">
+                    <div class="slide-content">
+                        <h1>Transformando Ideias em Soluções Digitais</h1>
+                        <p>Desenvolvimento de sistemas e aplicativos personalizados.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('services/5f1824a47c479fc2c4cf39c7f22fbdcd.jpg');">
+                    <div class="slide-content">
+                        <h1>Desenvolvimento de sistemas</h1>
+                        <p>Construimos sistemas que atendam a demanda da sua empresa.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('services/4c7871e4492b6d8b8a57dc8e63805638.jpg');">
+                    <div class="slide-content">
+                        <h1>Construção de Apps</h1>
+                        <p>Solução de aplicativos que atendam a demanda, com soluções completas para seus clientes.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/designer4-designer.jpg');">
+                    <div class="slide-content">
+                        <h1>Identidade Visual de Impacto</h1>
+                        <p>Criamos a identidade visual que seu negócio merece.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('services/ab003a67eece99720c7ccd2b18524c00.jpg');">
+                    <div class="slide-content">
+                        <h1>Criação de Sites e Landing Pages</h1>
+                        <p>Desenvolvemos sites e landing pages que convertem.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('services/8234f3908e70f57e016932e8db7cbe3f.jpg');">
+                    <div class="slide-content">
+                        <h1>Design UX/UI Inovador</h1>
+                        <p>Projetamos experiências de usuário memoráveis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+    <main>
+        <section class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service">
+                <h3>Desenvolvimento de Sistemas e Apps</h3>
+                <p>Criamos soluções digitais sob medida para atender às necessidades do seu negócio.</p>
+            </div>
+            <div class="service">
+                <h3>Identidade Visual</h3>
+                <p>Desenvolvemos logotipos, branding e materiais visuais que destacam sua marca.</p>
+            </div>
+            <div class="service">
+                <h3>Criação de Sites e Landing Pages</h3>
+                <p>Projetamos sites e landing pages atraentes e funcionais para converter visitantes em clientes.</p>
+            </div>
+            <div class="service">
+                <h3>UX/UI Designer</h3>
+                <p>Oferecemos design intuitivo e visualmente atraente para uma experiência de usuário excepcional.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Connect/code. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    </script>
+</body>
+</html>

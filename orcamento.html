@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamentos - Connect/code</title>
+    <link rel="stylesheet" href="css/orcamento.css">
+    
+</head>
+<body>
+    <aside>
+        <!-- Lateral Menu -->
+        <div id="lateralMenu" class="lateral-menu">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+          <a href="erro.html"><i class="fas fa-info-circle"></i> Sobre</a>
+          <a href="Servicos.html"><i class="fas fa-concierge-bell"></i> Serviços</a>
+          <a href="erro.html"><i class="fas fa-envelope"></i> Contato</a>
+          <a href="https://wa.me/+5571996557344"><button style=" width: 200px; border-radius: 10px; border: none; box-shadow: 10px 10px 20px #333;"><i class="fab fa-whatsapp" style="padding: 20px; column-gap: 10px;"></i>PREÇOS</button></a>
+      
+          <div class="social-icons" style="display: flex;">
+              <a href="https://www.instagram.com/sosconnect_" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/sosconnect_" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+          <!-- Button to open the menu -->
+          <span class="openbtn" onclick="openNav()">&#9776;</span>
+          <script>
+                  function openNav() {
+          document.getElementById("lateralMenu").style.width = "250px";
+      }
+      
+      function closeNav() {
+          document.getElementById("lateralMenu").style.width = "0";
+      }
+      
+          </script>
+          
+      </aside>    
+    <header>
+          
+                <nav>
+                    <ul>
+                        <div class="logo"><a href=""><img src="img/Group 2logosos.jpeg" alt="cabeçalho"></div></a>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="erro.html">Sobre</a></li>
+                        <li><a href="Servicos.html">Serviços</a></li>
+                        <li><a href="erro.html">Contato</a></li>
+                        <li><a href="https://wa.me/+5571996557344"><button>PREÇOS</button></a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <div class="container">
+        <div class="title">
+            <h1>Precisa de um <span>SITE</span>, <span>SISTEMA OU APP?</span> Gostaria de cirar sua <span>COMUNICAÇÂO VISUAL</span>?</h1>
+            <p>Escreva alguns detalhes para nossos desenvolvedores(as). E retornaremos com mais detalhes de valores e orçamentos.</p>
+        </div>
+        <main>
+        <section class="how-to-order">
+            <h2>Como pedir um orçamento?</h2>
+            <div class="order-options">
+                <div class="option">
+                    <input type="checkbox" id="bot">
+                    <label for="bot">Precisa de um App?</label>
+
+                    <ul style="display: flex; flex-direction: column;">
+                        <li>Descreva em detalhes o que precisa ser implementado (o que gostaria de adicionar?).</li>
+                        <li>Mencione passos/processos que gostaria de implementar.</li>
+                    </ul>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="system">
+                    <label for="system">Precisa de um sistema ou site?</label>
+                    <ul style="display: flex; flex-direction: column;">
+                        <li>Descreva a visão ou quais funcionalidades imagina serem necessárias;</li>
+                        <li>Quero um sistema para Fazer X,Y,Z;</li>
+                        <li>Esse sistema deve me permitir fazer A,B,C,D.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Como podemos te ajudar? *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Descreva exatamente o que está buscando. Quanto mais detalhes, mais rápido conseguimos te dar um retorno. Descrições vagas demais irão atrasar muito o processo de te entregar uma solução.</p>
+            <div class="wpp">
+                <div class="whatsapp-button">
+                    <a href="https://wa.me/+5571996557344" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/220/220236.png" alt="WhatsApp">
+                        Fale Conosco no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+        </footer>
+    </div>
+</main>
+</body>
+</html>
