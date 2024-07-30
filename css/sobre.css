@@ -181,7 +181,8 @@ footer {
 @media (max-width: 750px) {
     .fixed-nav .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        colum-gap: 20px;
     }
     .fixed-nav .nav-links {
         flex-direction: row;
